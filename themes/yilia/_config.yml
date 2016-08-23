@@ -1,0 +1,38 @@
+# Header
+menu:
+  主页: /
+  所有文章: /archives
+  随笔: /categories/Suibi
+  ios: /categories/ios
+  
+
+# SubNav
+subnav:
+  github: "https://github.com/lfsluoye"
+  weibo: "http://weibo.com/2632170711"
+  rss: /atom.xml
+  # facebook: "/"
+  # google: "/"
+  # twitter: "/"
+  # linkedin: "/"
+
+rss: /atom.xml
+
+# Content
+excerpt_link: more
+fancybox: true
+
+# Miscellaneous
+
+favicon: /favicon.png
+
+avatar: /assets/blogImg/lfsluoye.png
+share: true
+duoshuo: "litten-hexo"
+tagcloud: true
+
+#是否开启“关于我”。
+#不开启——
+#aboutme: false
+#开启——
+aboutme: 一名ios开发工程师，就职于北京建科研软件有限公司。深入研究ios移动端开发。
