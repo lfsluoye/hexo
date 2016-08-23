@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: "iOS开发-自定义控件的方式及注意"
+title: "iOS-textView文本换行高度自动适应"
 date: 2015-1-25 
 comments: false
 tags: ios 
