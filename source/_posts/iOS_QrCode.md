@@ -3,7 +3,8 @@ layout: post
 title: "iOS二维码生成(带logo)"
 date: 2015-1-30 
 comments: false
-tags: ios 
+categories: iOS
+tags: OC 
 ---
 制作一个中心带有logo的二维码
 <!-- more -->

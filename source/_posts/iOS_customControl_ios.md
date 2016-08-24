@@ -2,8 +2,9 @@
 layout: post
 title: "iOS开发-自定义控件的方式及注意"
 date: 2015-1-19 
+categories: iOS
 comments: false
-tags: ios 
+tags: OC 
 ---
 ####1. 使用纯代码的方式 
 一般来说我们的自定义类继承自UIView，首先在initWithFrame:方法中将需要的子控件加入view中。注意，这里只是加入到view中，并没有设置各个子控件的尺寸。
