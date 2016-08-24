@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "iOS小Demo--图片无限轮播"
 date: 2015-12-05 
@@ -6,6 +6,7 @@ categories: iOS
 comments: false
 tags: OC 
 ---
+
 网上已经有很多无限循环的小Demo,这里我把感觉还不错的做了整理,不多说直接上代码.
 <!-- more -->
 ```
