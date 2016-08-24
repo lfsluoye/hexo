@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "iOS实现刮刮乐功能与图片添加水印功能"
 date: 2016-07-05 
@@ -6,6 +6,7 @@ categories: iOS
 comments: false
 tags: OC 
 ---
+
 代码简单直接上代码
 **1.创建子视图**
 ```
