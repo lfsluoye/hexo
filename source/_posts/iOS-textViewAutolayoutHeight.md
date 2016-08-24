@@ -6,6 +6,7 @@ comments: false
 categories: iOS
 tags: OC 
 ---
+
 由于开发中需要需要个类似QQ空间的一个评论功能,首先要做的输入框肯定是会换行的,因为iOS中(TextField)是单行组件,所以只能使用(TextView)这个多行组件了,可是在不做处理的情况下这个组件的文字在换行的时候会顶出输入框
 
 解决思路:
