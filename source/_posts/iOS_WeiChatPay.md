@@ -6,6 +6,7 @@ categories: iOS
 comments: false
 tags: OC 
 ---
+
 1.首先下载最新的微信支付的SDK包.[下载地址](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=11_1),拖到你的工程文件中.
 
 简要步骤如下:
