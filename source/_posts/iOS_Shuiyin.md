@@ -9,6 +9,7 @@ tags: OC
 
 代码简单直接上代码
 **1.创建子视图**
+<!-- more -->
 ```
 - (void)setupSubviews {
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(20, 100, kScreenWidth-40, kScreenWidth-40)];
