@@ -6,7 +6,7 @@ categories: iOS
 comments: false
 tags: OC
 ---
-####把删除多张表的语句写在同一句sql语句里
+#### 把删除多张表的语句写在同一句sql语句里
 <!-- more -->
 ```
  NSString *sql = [NSString stringWithFormat:
