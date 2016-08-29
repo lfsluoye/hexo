@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS二维码生成(带logo)"
-date: 2015-1-30 
+date: 2015-3-30 
 comments: false
 categories: iOS
 tags: OC 
