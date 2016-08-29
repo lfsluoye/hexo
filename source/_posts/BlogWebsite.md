@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: "iOS实现刮刮乐功能与图片添加水印功能"
+title: "常用博客网址"
 date: 2015-05-05 
 categories: 随笔
 comments: false
