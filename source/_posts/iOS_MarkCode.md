@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "iOS不常用但是实用"
 date: 2016-08-25 
@@ -8,7 +8,7 @@ tags: OC
 ---
 ### 随时更新
 #### 1. 获取控件在屏幕上的位置
-<!-- more -->
+
 ```
 @interface LFAddressView()
 
@@ -22,6 +22,7 @@ tags: OC
 UIWindow * window=[[[UIApplication sharedApplication] delegate] window];
 self.rectAddress = [btn convertRect: btn.bounds toView:window];
 ```
+<!-- more -->
 #### 2. 字典转json
 最好写在分类里,一般上传都要用到
 ```
