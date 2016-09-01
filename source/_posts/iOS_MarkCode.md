@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "iOS不常用但是实用"
 date: 2016-08-25 
@@ -58,4 +58,57 @@ UILabel *label = (UILabel *)subView;
 }
 ```
 
+#### 5. 设备唯一标识
+```
++ (NSString *)udid {
+    NSString * desStr = [NSString stringWithFormat:@"%@",[[UIDevice currentDevice] identifierForVendor].UUIDString];
+    
+    return desStr;
+}
+```
+#### 6. 判断字符串是否有中文
+```
++(BOOL)IsChinese:(NSString *)str {
+    for(int i=0; i< [str length];i++){
+        int a = [str characterAtIndex:i];
+        if( a > 0x4e00 && a < 0x9fff){
+            return YES;
+        }
+    } return NO;
+}
+```
 
+#### 7. 获得随机码uuid
+```
+- (NSString *)uuid {
+    CFUUIDRef puuid = CFUUIDCreate(nil);
+    CFStringRef uuidString = CFUUIDCreateString(nil, puuid);
+    NSString * result = (NSString *)CFBridgingRelease(CFStringCreateCopy(NULL, uuidString));
+    CFRelease(puuid);
+    CFRelease(uuidString);
+    return result.lowercaseString;
+}
++ (NSString *)uuid {
+    return [[[self alloc] init] uuid];
+}
+```
+
+#### 8. MD5 32位加密
+```
+- (NSString *)md532BitUpper:(NSString *)str {
+    const char * cStr = [str UTF8String];
+    unsigned char result[16];
+    NSNumber * num = [NSNumber numberWithUnsignedLong:strlen(cStr)];
+    CC_MD5(cStr, [num intValue], result);
+
+    NSMutableString * ret = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH];
+    for (long i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        [ret appendFormat:@"%02x",result[i]];
+    }
+    return ret;
+}
+
++ (NSString *)md532Bitupper:(NSString *)str {
+    return [[[self alloc] init] md532BitUpper:str];
+}
+```
