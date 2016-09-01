@@ -7,7 +7,7 @@ comments: false
 tags: OC 
 ---
 
-####1. 使用纯代码的方式 
+#### 1. 使用纯代码的方式 
 一般来说我们的自定义类继承自UIView，首先在initWithFrame:方法中将需要的子控件加入view中。注意，这里只是加入到view中，并没有设置各个子控件的尺寸。
 
 **为什么要在initWithFrame:方法而不是在init方法？**
@@ -91,7 +91,7 @@ CYLView *view = [[CYLView alloc] initWithFrame: ...];
 view.book = book; // 设置book的数据，此时会调用setter方法给各个控件设置数据
 ```
 这样一来就实现自定义类显示数据的功能。而且将子控件封装到自定义中，控制器只需要创建自定义类和给它数据，而不需要担心这个类内部是怎么设计的，都有什么控件，数据是如何安排的，所以当需求改变时，我们的控制器有可能完全不用改动，只需改变自定义类的内部就可以。
-###总结:
+### 总结:
 1. initWithFrame:中添加子控件。
 
 2. layoutSubviews中设置子控件frame
@@ -103,7 +103,7 @@ view.book = book; // 设置book的数据，此时会调用setter方法给各个�
 5. 对自定义类对外暴露的数据接口进行赋值即可。
 
 
-###2. 使用xib方式
+### 2. 使用xib方式
 1. 使用xib的方式可以省去initWithFrame:和layoutSubviews中添加子控件和设置子控件尺寸的步骤，还有在view controller里面设置view的frame，因为添加子控件和设置子控件的尺寸以及整个view的尺寸在xib中就已经完成。（注意整个view的位置还没有设置，需要在控制器里面设置。）
 
 2. 我们只需对外提供数据接口，重写setter方法就可以显示数据。
@@ -129,7 +129,7 @@ CYLView *view = [objectArray firstObject];
 3. 对外设置数据接口，重写setter方法给子控件设置显示数据。
 
 4. 在view controller类里面加载xib文件就可以得到对应的类（这里不需要再设置自定义类的frame，因为xib已经有了整个view的大小。只需要设置位置。），接着就可以对类对外的数据接口赋值。
-###补充
+### 补充
 
 1. 如果使用代码的方式创建控件，那么在创建时一定会调用initWithFrame:方法；如果使用xib/storyboard方式创建控件，那么在创建时一定会调用initWithCoder:方法。
 
