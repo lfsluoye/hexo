@@ -11,8 +11,9 @@ tags: OC
 一般来说我们的自定义类继承自UIView，首先在initWithFrame:方法中将需要的子控件加入view中。注意，这里只是加入到view中，并没有设置各个子控件的尺寸。
 
 **为什么要在initWithFrame:方法而不是在init方法？**
-<!-- more -->
+
 因为使用纯代码的方式创建自定义类，在以后使用的时候可能使用init方法创建，也有可能使用initWithFrame:方法创建，但是无论哪种方式，最后都会调用到initWithFrame:方法。在这个方法中创建子控件，可以保证无论哪种方式都可以成功创建。
+<!-- more -->
 **为什么要在initWithFrame:方法里面只是将子控件加到view而不设置尺寸？**
 
 前面已经说过，两种方式最后都会调用到initWithFrame:方法。如果使用init方法创建，那么这个view的frame有可能是不确定的：
