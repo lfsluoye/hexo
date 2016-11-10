@@ -61,3 +61,13 @@ testVC.modalPresentationCapturesStatusBarAppearance = true;
 [self presentViewController:testVC animated:YES completion:nil];
 ```
 
+### 问题六 解决xcode8中的xib冲突
+最近xCode8 和 iOS10 相继出来，团队中有人使用xcode8 来开发工程；
+他们提交代码后，我们发现使用xcode8 修改的xib文件，在xcode7，7.3.1上无法运行:
+
+解决方法如下：
+1. 右键点击该xib文件，使用source code查看；
+2. 在source code 中去掉下面这行代码：
+`<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>`
+3. clean 一下，即可成功运行。
+

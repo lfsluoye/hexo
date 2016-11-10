@@ -4,8 +4,8 @@
 
 # Site #整体网站的基本信息
 title: 李甫帅的博客 #网站标题
-subtitle: #网站副标题
-description: #网站描述
+subtitle: 天道酬勤,想成功,唯一法,坚持尔
+description: 14年开始从事ios开发,目前就职于北京建科研软件有限公司.
 author: 李甫帅 #网站作者，在下方显示
 email: 171763885@qq.com
 language: zh-CN
@@ -48,6 +48,7 @@ highlight: 	#代码块的设置
 default_category: uncategorized #默认分类
 category_map:  
     随笔: Suibi #分类别名
+    ios: iOS #分类别名
 tag_map:                        #标签别名
 
 # Date / Time format
