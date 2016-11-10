@@ -1,7 +1,7 @@
-﻿---
+---
 layout: post
 title: "iOS不常用但是实用"
-date: 2016-08-25 
+date: 2016-10-25 
 categories: iOS
 comments: false
 tags: OC
@@ -110,5 +110,15 @@ UILabel *label = (UILabel *)subView;
 
 + (NSString *)md532Bitupper:(NSString *)str {
     return [[[self alloc] init] md532BitUpper:str];
+}
+```
+
+#### 9. ios通过正则判断6~18位包含数字或字母的字符串
+```
+- (BOOL)validateNumber:(NSString *) textString
+{
+    NSString* number=@"^[0-9A-Za-z]{6,18}";
+    NSPredicate *numberPre = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",number];
+    return [numberPre evaluateWithObject:textString];
 }
 ```
