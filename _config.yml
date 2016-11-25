@@ -48,7 +48,6 @@ highlight: 	#代码块的设置
 default_category: uncategorized #默认分类
 category_map:  
     随笔: Suibi #分类别名
-    ios: iOS #分类别名
 tag_map:                        #标签别名
 
 # Date / Time format
