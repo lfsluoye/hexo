@@ -122,3 +122,15 @@ UILabel *label = (UILabel *)subView;
     return [numberPre evaluateWithObject:textString];
 }
 ```
+#### 10. 替换同一个控件的文字大小或者颜色
+```
+let mutableStr = NSMutableAttributedString(string: monthlyRent)
+let range = (monthlyRent as NSString).rangeOfString(kRentUnit)
+mutableStr.addAttributes([NSFontAttributeName:UIFont.CustomSuitFont(12),NSForegroundColorAttributeName:KNewGreenTextHexColor], range: range)
+label.attributedText = mutableStr
+```
+#### 11. 延迟
+```
+dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (Int64)(1 * NSEC_PER_SEC)), dispatch_get_main_queue()) { [weak self]() -> Void in
+}
+```
