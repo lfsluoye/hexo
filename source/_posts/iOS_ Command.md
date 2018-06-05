@@ -22,7 +22,7 @@ sudo spctl --master-disable
 1. 查看当前: xcode xcode-select --print-path
 2. 切换xcode: sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
 
-
+<!-- more -->
 ### cocopods安装异常
 ```
 pod repo remove master
