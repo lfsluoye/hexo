@@ -23,6 +23,7 @@ sudo spctl --master-disable
 2. 切换xcode: sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
 
 <!-- more -->
+
 ### cocopods安装异常
 ```
 pod repo remove master
@@ -69,13 +70,21 @@ git clone https://git.coding.net/CocoaPods/Specs.git ~/.cocoapods/repos/master
 删除分支
 > git branch -d dev
 
+删除远程分支
+> git push origin :branch-name  
+
 合并分支
 > git merge --no-ff -m "merge with no-ff" dev
 
 放弃所有修改
-> git clean -xdf
+> git checkout .
 
 推送tag
 > git push origin [tagname]
 
+忽略已经提交到服务器的文件
+> git rm --cached filename
+
+忽略已经提交到服务器的文件夹
+> git rm --cached -r 
 
